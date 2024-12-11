@@ -1,0 +1,83 @@
+[
+    {
+        "template": "title",
+        "props": {
+            "title": "AnyExpress",
+            "subtitle": "One Adapter Enabling Highly Flexible Audio-Driven Portrait Animation",
+            "authors": [
+                [
+                    {
+                        "name": "Anonymous authors",
+                        "homepage": "",
+                        "suffix": ""
+                    }
+                ],
+                [
+                    {
+                        "name": "Paper under double-blind review",
+                        "homepage": "",
+                        "suffix": ""
+                    }
+                ]
+            ],
+            "resources": {
+            },
+            "mainVideo": ""
+        }
+    },
+    {
+        "template": "abstract",
+        "props": {
+            "figure": "//anyexpress.oss-cn-beijing.aliyuncs.com/pics/Teaser_v2.jpg",
+            "content": "Portrait animation, particularly audio-driven portrait animation, requires flexibility in facial expressions, head movement, and dynamic contexts. However, existing diffusion-based methods rely heavily on the design of ReferenceNet, leading to increased training complexity and incompatibility with other custom base models or adapters, also limiting face position, view changes, and animated context generation. To address these challenges, we propose AnyExpress, a lightweight, modular framework that eliminates the need for ReferenceNet, reducing the number of trainable parameters by 7 times. By training one plug-and-play audio-motion adapter, it allows freeform, expressive audio-driven portrait animation with any face pose and any animated context, while supporting text-driven modifications. In the context of character generation, there are two primary methods to control the desired character attributes. First, if a specific ID needs to be assigned, this can be achieved through ID controls (e.g., IP-Adapter-Face). Alternatively, the character’s attributes can be controlled through textual descriptions. Through comprehensive qualitative and quantitative analyses, AnyExpress demonstrates unprecedented freedom in generating videos with dynamic background, lower training demand, and seamless integration with evolving custom models and control adapters, providing a flexible solution for diverse generation needs. We will release our code and demo to the community, encouraging further improvement."
+        }
+    },
+    {
+        "template": "framework",
+        "props": {
+            "image": "//anyexpress.oss-cn-beijing.aliyuncs.com/pics/pipeline_modular_v2.jpg",
+            "description": "Modular Pipeline of AnyExpress"
+        }
+    },
+    {
+        "template": "video-carousel",
+        "props": {
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
+            "items": [
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/6eH2B-breaking_waves.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/joker-dancing_fire.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/kara-bllowing_sails.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/mola-erupting_volcano.mp4"
+            ],
+            "count": 4
+        }
+    },
+    {
+        "template": "video-carousel",
+        "props": {
+            "id": "personalize-1",
+            "title": "Replace Personalized T2I Models",
+            "items": [
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/tys.mp4"
+            ],
+            "count": 1
+        }
+    },
+    {
+        "template": "video-carousel",
+        "props": {
+            "id": "anytext",
+            "title": "Describe Identity with Text Description",
+            "items": [
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/mechgirl-talk_emotion-swirling_mist.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/biden-talk_emo-sparkling_fireworks.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/bride-tys-people.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/kara-10-dancing_fire.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/tys-tys-leaves.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/tys-tys-volcano.mp4"
+            ],
+            "count": 3
+        }
+    }
+]
