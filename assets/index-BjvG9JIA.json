@@ -1,0 +1,143 @@
+[
+    {
+        "template": "title",
+        "props": {
+            "title": "EpicExpanse",
+            "subtitle": "Large-Scale 3D Scene Generation with Consistent Outpainting and Depth Fidelity",
+            "authors": [
+                [
+                    {
+                        "name": "Anonymous authors",
+                        "homepage": "",
+                        "suffix": ""
+                    }
+                ],
+                [
+                    {
+                        "name": "Paper under double-blind review",
+                        "homepage": "",
+                        "suffix": ""
+                    }
+                ]
+            ],
+            "resources": {
+            },
+            "mainVideo": ""
+        }
+    },
+    {
+        "template": "abstract",
+        "props": {
+            "figure": "//epicex.oss-cn-beijing.aliyuncs.com/assets/teaser.jpg",
+            "content": "We tackle the challenge of generating seamless and visually coherent 3D scenes from text prompts and images, a task often plagued by abrupt transitions, boundary artifacts, and inconsistent depth representations in existing methods. These issues not only disrupt realism but also amplify as scenes scale, resulting in degraded quality for large-scale generation. To address these limitations, we propose EpicExpanse, a novel framework that introduces two key innovations. First, an enhanced Outpaint Modulator leverages channel-aware noise thresholding to achieve smooth transitions, mitigate boundary artifacts, and preserve intricate details. Second, an Adaptive Depth Modulator combines adaptive window-based depth filling and edge-preserving smoothing to produce consistent depth maps and maintain geometric stability across views. Our approach resolves common artifacts, ensuring the generation of high-quality, large-scale 3D environments with robust spatial and visual continuity. Both qualitative and quantitative evaluations demonstrate that EpicExpanse significantly outperforms prior methods, offering a new standard for stable, immersive, and visually compelling 3D scene generation."
+        }
+    },
+    {
+        "template": "framework",
+        "props": {
+            "image": "//epicex.oss-cn-beijing.aliyuncs.com/assets/framework.png",
+            "description": "Modular Pipeline of EpicExpanse"
+        }
+    },
+    {
+        "template": "image-video",
+        "props": {
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
+            "items": [
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/12_desert.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/desert.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/40_real_mountain_2.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/real_mountain_2.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
+            ],
+            "count": 1
+        }
+    },
+
+    {
+        "template": "image-video",
+        "props": {
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
+            "items": [
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/63_poem_chuzhouxijian.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/poem_chuzhouxijian.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/17_ink_mountain.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/ink_mountain.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
+            ],
+            "count": 1
+        }
+    },
+    {
+        "template": "image-video",
+        "props": {
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
+            "items": [
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/16_ink_lake.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/short/ink_lake.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/54_ukiyo-e_1.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/ukiyo-e_1.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
+            ],
+            "count": 1
+        }
+    },
+    {
+        "template": "image-video",
+        "props": {
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
+            "items": [
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/69_story_walden.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/story_walden.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/72_poem_snowy_evening.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/poem_snowy_evening.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
+            ],
+            "count": 1
+        }
+    },
+    {
+        "template": "image-video",
+        "props": {
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
+            "items": [
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/49_real_westlake_3.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/real_westlake_3.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/38_real_lake.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/real_lake.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
+            ],
+            "count": 1
+        }
+    }
+]
