@@ -24,7 +24,7 @@ jobs:
           pnpm run build --base=/${REPO}
         env:
           # TODO: change repo name
-          REPO: SYE
+          REPO: EpicExpanse
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
