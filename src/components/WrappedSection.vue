@@ -5,6 +5,7 @@
     <VideoComparision v-if="template === 'video-comparision'" :props="props" />
     <TextVideo v-if="template === 'text-video'" :props="props" />
     <SingleVideo v-if="template === 'single-video'" :props="props" />
+    <ImageVideo v-if="template === 'image-video'" :props="props" />
     <VideoCarousel v-if="template === 'video-carousel'" :props="props" />
     <BibTeX v-if="template === 'bibtex'" :props="props" />
 </template>
@@ -16,6 +17,7 @@ import FrameworkSection from "@/components/FrameworkSection.vue"
 import VideoComparision from "@/components/VideoComparision.vue"
 import TextVideo from "@/components/TextVideo.vue"
 import SingleVideo from "@/components/SingleVideo.vue"
+import ImageVideo from "@/components/ImageVideo.vue"
 import VideoCarousel from "@/components/VideoCarousel.vue"
 import BibTeX from "@/components/BibTeX.vue"
 interface Props {

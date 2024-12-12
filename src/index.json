@@ -2,8 +2,8 @@
     {
         "template": "title",
         "props": {
-            "title": "AnyExpress",
-            "subtitle": "One Adapter Enabling Highly Flexible Audio-Driven Portrait Animation",
+            "title": "EpicExpanse",
+            "subtitle": "Large-Scale 3D Scene Generation with Consistent Outpainting and Depth Fidelity",
             "authors": [
                 [
                     {
@@ -28,56 +28,116 @@
     {
         "template": "abstract",
         "props": {
-            "figure": "//anyexpress.oss-cn-beijing.aliyuncs.com/pics/Teaser_v2.jpg",
-            "content": "Portrait animation, particularly audio-driven portrait animation, requires flexibility in facial expressions, head movement, and dynamic contexts. However, existing diffusion-based methods rely heavily on the design of ReferenceNet, leading to increased training complexity and incompatibility with other custom base models or adapters, also limiting face position, view changes, and animated context generation. To address these challenges, we propose AnyExpress, a lightweight, modular framework that eliminates the need for ReferenceNet, reducing the number of trainable parameters by 7 times. By training one plug-and-play audio-motion adapter, it allows freeform, expressive audio-driven portrait animation with any face pose and any animated context, while supporting text-driven modifications. In the context of character generation, there are two primary methods to control the desired character attributes. First, if a specific ID needs to be assigned, this can be achieved through ID controls (e.g., IP-Adapter-Face). Alternatively, the character’s attributes can be controlled through textual descriptions. Through comprehensive qualitative and quantitative analyses, AnyExpress demonstrates unprecedented freedom in generating videos with dynamic background, lower training demand, and seamless integration with evolving custom models and control adapters, providing a flexible solution for diverse generation needs. We will release our code and demo to the community, encouraging further improvement."
+            "figure": "//epicex.oss-cn-beijing.aliyuncs.com/assets/teaser.jpg",
+            "content": "We tackle the challenge of generating seamless and visually coherent 3D scenes from text prompts and images, a task often plagued by abrupt transitions, boundary artifacts, and inconsistent depth representations in existing methods. These issues not only disrupt realism but also amplify as scenes scale, resulting in degraded quality for large-scale generation. To address these limitations, we propose EpicExpanse, a novel framework that introduces two key innovations. First, an enhanced Outpaint Modulator leverages channel-aware noise thresholding to achieve smooth transitions, mitigate boundary artifacts, and preserve intricate details. Second, an Adaptive Depth Modulator combines adaptive window-based depth filling and edge-preserving smoothing to produce consistent depth maps and maintain geometric stability across views. Our approach resolves common artifacts, ensuring the generation of high-quality, large-scale 3D environments with robust spatial and visual continuity. Both qualitative and quantitative evaluations demonstrate that EpicExpanse significantly outperforms prior methods, offering a new standard for stable, immersive, and visually compelling 3D scene generation."
         }
     },
     {
         "template": "framework",
         "props": {
-            "image": "//anyexpress.oss-cn-beijing.aliyuncs.com/pics/pipeline_modular_v2.jpg",
-            "description": "Modular Pipeline of AnyExpress"
+            "image": "//epicex.oss-cn-beijing.aliyuncs.com/assets/framework.png",
+            "description": "Modular Pipeline of EpicExpanse"
         }
     },
     {
-        "template": "video-carousel",
+        "template": "image-video",
         "props": {
             "id": "anybg-sameid-1",
             "title": "Animated Background (Same Identity)",
             "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/6eH2B-breaking_waves.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/joker-dancing_fire.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/kara-bllowing_sails.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/mola-erupting_volcano.mp4"
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/12_desert.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/desert.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/40_real_mountain_2.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/real_mountain_2.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
             ],
-            "count": 4
+            "count": 1
         }
     },
+
     {
-        "template": "video-carousel",
+        "template": "image-video",
         "props": {
-            "id": "personalize-1",
-            "title": "Replace Personalized T2I Models",
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
             "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/tys.mp4"
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/63_poem_chuzhouxijian.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/poem_chuzhouxijian.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/17_ink_mountain.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/ink_mountain.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
             ],
             "count": 1
         }
     },
     {
-        "template": "video-carousel",
+        "template": "image-video",
         "props": {
-            "id": "anytext",
-            "title": "Describe Identity with Text Description",
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
             "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/mechgirl-talk_emotion-swirling_mist.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/biden-talk_emo-sparkling_fireworks.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/bride-tys-people.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/kara-10-dancing_fire.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/tys-tys-leaves.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/tys-tys-volcano.mp4"
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/16_ink_lake.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/short/ink_lake.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/54_ukiyo-e_1.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/ukiyo-e_1.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
             ],
-            "count": 3
+            "count": 1
+        }
+    },
+    {
+        "template": "image-video",
+        "props": {
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
+            "items": [
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/69_story_walden.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/story_walden.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/72_poem_snowy_evening.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/poem_snowy_evening.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
+            ],
+            "count": 1
+        }
+    },
+    {
+        "template": "image-video",
+        "props": {
+            "id": "anybg-sameid-1",
+            "title": "Animated Background (Same Identity)",
+            "items": [
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/49_real_westlake_3.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/real_westlake_3.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                },
+                {
+                    "image": "//epicex.oss-cn-beijing.aliyuncs.com/imgs/38_real_lake.jpg",
+                    "video": "//epicex.oss-cn-beijing.aliyuncs.com/vids/long/real_lake.mp4",
+                    "prompt": "Pose control demonstration with subtle movements."
+                }
+            ],
+            "count": 1
         }
     }
 ]
